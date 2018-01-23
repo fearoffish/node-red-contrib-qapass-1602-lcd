@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "None",
   "node-red" : {
     "nodes": {
-      "funduino-qapass-1602-lcd": "lcd.js"
+      "qapass-1602-lcd": "lcd.js"
     }
   },
   "dependencies": {
