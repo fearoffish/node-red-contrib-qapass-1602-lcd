@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('qapass-1602-lcd',{
+        category: 'output',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"lcd";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="qapass-1602-lcd">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="qapass-1602-lcd">
+    <p>A simple node that outputs msg.line1 and msg.line2 to a QAPass Funduino 1602 LCD screen</p>
+</script>
